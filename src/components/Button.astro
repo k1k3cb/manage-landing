@@ -1,0 +1,13 @@
+---
+interface Props {
+  text: string;
+  class?: string;
+}
+const { text, class: buttonClass = '' } = Astro.props;
+---
+
+<a
+  href='#'
+  class={`bg-bright-red text-vary-light-gray block w-max py-4 px-12 rounded-full
+${buttonClass}`}>{text}</a
+>
