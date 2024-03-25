@@ -5,13 +5,10 @@
 body {
   /* font-family: 'Be Vietnam Pro', sans-serif; */
   /* background: #b4b5b6; */
- 
 }
 
 @layer components {
   .wrapper {
     @apply w-[90%] mx-auto overflow-hidden max-w-screen-xl;
   }
-
-  
 }

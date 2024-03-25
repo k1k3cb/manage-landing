@@ -1,9 +1,37 @@
 ---
-
+import { ARTICLES } from '../data/articles';
 import Layout from '../layouts/Layout.astro';
-import Hero from '../components/Hero.astro';
+import Article from '../components/Article.astro';
+import About from '../components/About.astro';
 ---
 
 <Layout title='Welcome to Astro.'>
- <Hero/>
+  <main>
+    <section class='wrapper text-center py-24 grid gap-12 md:grid-cols-2 md:text-left'>
+      <article>
+        <h2 class='text-3xl font-bold text-very-dark-blue mb-6 md:text-4xl'>
+          What’s different about Manage?
+        </h2>
+
+        <p class='text-dark-grayish-blue'>
+          Manage provides all the functionality your team needs, without the
+          complexity. Our software is tailor-made for modern digital product
+          teams.
+        </p>
+      </article>
+
+      <div class='grid gap-12'>
+        {
+          ARTICLES.map(article => (
+            <Article
+              number={article.number}
+              title={article.title}
+              content={article.content}
+            />
+          ))
+        }
+      </div>
+    </section>
+    <About/>
+  </main>
 </Layout>

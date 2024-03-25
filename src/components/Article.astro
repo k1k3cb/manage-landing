@@ -1,0 +1,24 @@
+---
+interface Props {
+  number: string;
+  title: string;
+  content: string;
+}
+
+const { number, title, content } = Astro.props;
+---
+
+<article class='space-y-4 md:space-y-6'>
+  <p
+    class='bg-very-pale-red rounded-l-full font-bold flex items-center md:bg-transparent'
+  >
+    <span class='bg-bright-red text-white px-6 rounded-full py-2'>
+      {number}
+    </span>
+    <span class='flex-1 p-2'> {title} </span>
+  </p>
+
+  <p class='text-dark-grayish-blue text-left'>
+    {content}
+  </p>
+</article>
