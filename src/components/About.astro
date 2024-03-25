@@ -1,1 +1,46 @@
-<section>About us</section>
+---
+import { Image } from 'astro:assets';
+import userAvatar from '../assets/images/avatar-anisha.png';
+import Button from './UI/Button.astro';
+---
+
+<section class='wrapper text-center py-24 max-w-lg mx-auto md:max-w-xl'>
+  <h2 class='text-3xl font-bold text-very-dark-blue md:text-4xl'>
+    What they’ve said
+  </h2>
+
+  <div class='mt-24 mb-14'>
+    <article class='bg-vary-light-gray pt-16 pb-12 px-4 relative'>
+      <Image
+        src={userAvatar}
+        class='absolute w-24 aspect-square -top-12 inset-x-0 mx-auto'
+        alt='User avatar'
+        format='avif'
+      />
+
+      <h3 class='text-xl mb-4 pt-2 font-bold text-very-dark-blue'>Ali Bravo</h3>
+
+      <p class='text-dark-grayish-blue'>
+        “We have been able to cancel so many other subscriptions since using
+        Manage. There is no more cross-channel confusion and everyone is much
+        more focused.”
+      </p>
+    </article>
+  </div>
+
+  <Button text='Get started' class='mx-auto shadow-xl shadow-bright-red/30' />
+</section>
+
+<section class='bg-bright-red font-bold'>
+  <div
+    class='wrapper py-24 text-center grid gap-6 md:grid-cols-[40%_40%] md:justify-between md:items-center md:text-left'
+  >
+    <h2 class='text-4xl text-very-pale-red'>
+      Simplify how your team works today.
+    </h2>
+    <Button
+      text='Get started'
+      class='text-bright-red bg-vary-light-gray mx-auto md:mx-0 md:justify-self-end'
+    />
+  </div>
+</section>

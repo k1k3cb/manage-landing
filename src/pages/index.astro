@@ -1,13 +1,15 @@
 ---
+import About from '../components/About.astro';
+import Article from '../components/Article.astro';
 import { ARTICLES } from '../data/articles';
 import Layout from '../layouts/Layout.astro';
-import Article from '../components/Article.astro';
-import About from '../components/About.astro';
 ---
 
 <Layout title='Welcome to Astro.'>
   <main>
-    <section class='wrapper text-center py-24 grid gap-12 md:grid-cols-2 md:text-left'>
+    <section
+      class='wrapper text-center py-24 grid gap-12 md:grid-cols-2 md:text-left'
+    >
       <article>
         <h2 class='text-3xl font-bold text-very-dark-blue mb-6 md:text-4xl'>
           What’s different about Manage?
@@ -32,6 +34,6 @@ import About from '../components/About.astro';
         }
       </div>
     </section>
-    <About/>
+    <About />
   </main>
 </Layout>
