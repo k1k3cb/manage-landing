@@ -11,4 +11,19 @@ body {
   .wrapper {
     @apply w-[90%] mx-auto overflow-hidden max-w-screen-xl;
   }
+
+  .footer-area {
+    grid-template-areas:
+      'form'
+      'navigation'
+      'social-media'
+      'logo'
+      'copy';
+  }
+
+  .footer-area-md {
+    grid-template-areas:
+      'logo           navigation  form'
+      'social-media   navigation  copy';
+  }
 }
