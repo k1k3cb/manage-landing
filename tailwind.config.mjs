@@ -17,8 +17,8 @@ export default {
       },
 
       backgroundImage: {
-        'close-menu': "url('public/images/icon-close.svg')",
-        'open-menu': "url('public/images/icon-hamburger.svg')"
+        'close-menu': "url('/images/icon-close.svg')",
+        'open-menu': "url('/images/icon-hamburger.svg')"
       }
     }
   },
